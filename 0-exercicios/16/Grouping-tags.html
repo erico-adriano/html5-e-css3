@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #c6d4e1;
+            font: normal 16px  arial;
+            margin: 0px;
+        }
+
+        header > nav {
+            background-color: #44749d;
+            padding: 10px 20px;
+            text-align: right;
+        }
+        
+
+        header > nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #ebe7e0;
+            padding-right: 20px;
+        }
+
+        header > nav > a:hover {
+            color: #bdb8ad;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #sect1 {
+            background-color: #fff;
+            padding: 10px 20px;
+        }
+
+        #sect1 > h2 {
+            color: #44749d;
+        }
+
+        #sect-total {
+            display: flex;
+            padding: 10px 20px;
+        }
+
+        .asi {
+            margin-left: 50px;
+        }
+
+        footer > nav {
+            text-align: center;
+            padding: 50px 20px 
+        }
+        
+        footer > nav > a {
+            text-decoration: none;
+            color: #44749d;
+            padding: 10px;
+        }
+
+        footer > nav > a:hover {
+            color: #bdb8ad;
+        }
+
+        .asi {
+            background-color: #44749d;
+            padding: 20px;
+            color: #bdb8ad;
+            box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.255);
+            border-radius: 10px 0px;
+        }
+        
+        #t4-1 {
+            margin-top: 2px;
+            margin-bottom: 13px;
+        }
+
+        #t4-2 {
+            margin-top: 30px;
+        }
+
+    </style>
+    <title>Grouping Tags</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">nav1</a>
+            <a href="#">nav2</a>
+            <a href="#">nav3</a>
+            <a href="#">nav4</a>
+            <a href="#">nav5</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Título Principal
+        </h1>
+    </main>
+    
+    <section id="sect1">
+        <h2>Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil fugit consequuntur quisquam voluptas ipsam placeat adipisci aliquid veniam? Ratione harum pariatur vel ex exercitationem distinctio officiis quidem cum officia!</p>
+    </section>
+
+    <section id="sect-total">
+        <section class="art">
+            <article>
+                <h3>Título de nível 3. 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint perspiciatis officiis facere dolore modi repellendus eveniet accusantium necessitatibus omnis sapiente unde corporis soluta blanditiis illum magnam, assumenda ratione harum.</p>
+            </article>
+            <article>
+                <h3>Título de nível 3. 2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint perspiciatis officiis facere dolore modi repellendus eveniet accusantium necessitatibus omnis sapiente unde corporis soluta blanditiis illum magnam, assumenda ratione harum.</p>
+            </article>
+        </section>
+
+        <section class="asi">
+            <aside>
+                <h4 id="t4-1">Título de nível 4. 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ea ad. Libero illo eligendi beatae corporis mollitia nam consequuntur, dicta nostrum tempore optio eaque qui magni ut cupiditate aliquam quia!</p>
+            </aside>
+            <aside>
+                <h4 id="t4-2">Título de nível 4. 2</h4>
+                <ol>
+                    <li>ítem 1</li>
+                    <li>ítem 2</li>
+                    <li>ítem 3</li>
+                    <li>ítem 4</li>
+                    <li>ítem 5</li>
+                </ol>
+            </aside>
+        </section>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#">Tel</a>
+            <a href="#">Redes Sociais</a>
+            <a href="#">Endereço</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        /* genérico */
+        a { 
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        /*pseudo-classes*/
+        a:visited {
+            color: lightseagreen;
+        }
+
+        a:hover {
+            color: rgb(32, 90, 178);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: chocolate;
+        }
+
+        /*pseudo-elementos*/
+        a::after {
+            content: ' [Link]';
+            font-size: 10px;
+            text-decoration: none;
+            color: darkgray;
+            font-weight: normal;
+        }
+
+        .especial::before {
+            content: '⇒';
+        }
+
+
+    </style>
+    <title>Links com Pseudo-elementos</title>
+</head>
+<body>
+     <h1>Links</h1>
+
+     <p>
+        <ul>
+            <li><a href="https://www.cursoemvideo.com/curso/javascript/aulas/comandos-basicos-do-javascript/modulos/tratamento-de-dados/" target="_blank">guthub</a></li>
+            <li class="especial"><a href="https://www.youtube.com/watch?v=ARDa0Aqn70Y&list=PLbav-34lKdAWquuYOt5rFQYAgT1Hvzu2K&index=42&t=326s">youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">site</a></li>
+        </ul>
+     </p>
+    
+</body>
+</html>
