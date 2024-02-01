@@ -9,9 +9,21 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightcyan;
+            border: 1px solid black;
+        }
+
         table {
             width: 600px;
             border-collapse: collapse;
+        }
+        
+        td.porcem {
+            text-align: right;
         }
 
         th, td {
@@ -24,6 +36,14 @@
             color: white;
             text-align: left;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
         
     </style>
 </head>
@@ -31,11 +51,11 @@
     <h1>Anatomia de tabela grande</h1>
 
     <table>
-
+        <caption>Tabela da população do Brasil por estados</caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População</th>
-            <th>% da População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 50px;">População</th>
+            <th id="porcem" scope="col" style="width: 50px; text-align: center;">% da População</th>
         </thead>
 
         <tbody>
@@ -178,7 +198,7 @@
 
         <tfoot>
             <tr>
-                <th>População Total</th>
+                <th scope="row">População Total</th>
                 <td class="num"><strong>203 062 512</strong></td>
                 <td class="porcem"><strong>100%</strong></td>
             </tr>
